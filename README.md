@@ -2,14 +2,14 @@
 
 
 
-#MessageDoot
+#MessageDoot :
 A real-time chat application built with the MERN stack, Socket.io, and TailwindCSS.
 
 - 🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
 - 🎃 Authentication && Authorization with JWT
 - 👾 Real-time messaging with Socket.io
 - 🚀 Online user status
-- 👌 Global state management with Zustand
+- 👌 Global state management with Zustand(an alternative to complex state management solutions like redux)
 - 🐞 Error handling both on the server and on the client
 - 🖼️ Image upload with Cloudinary
 
