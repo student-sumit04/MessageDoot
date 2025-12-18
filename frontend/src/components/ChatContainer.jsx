@@ -70,8 +70,9 @@ const ChatContainer = () => {
               <time className="text-xs opacity-50 ml-1">
                 {formatMessageTime(message.createdAt)}
               </time>
+              {/* updated to flex-col for image and text stacking */}
             </div>
-            <div className="chat-bubble flex flex-col">//updated to flex-col for image and text stacking
+            <div className="chat-bubble flex flex-col">
               {message.image && (
                 <img
                   src={message.image}
