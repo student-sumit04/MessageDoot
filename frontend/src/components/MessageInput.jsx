@@ -31,6 +31,11 @@ const MessageInput = () => {
   const handleSendMessage = async (e) => {
     e.preventDefault();
     if (!text.trim() && !imagePreview) return;
+    
+    // Show a loading toast
+    const loadingToast = imagePreview ? 
+      toast.loading("Sending image...") : 
+      toast.loading("Sending message...");
 
     try {
       await sendMessage({
@@ -38,12 +43,16 @@ const MessageInput = () => {
         image: imagePreview,
       });
 
-      // Clear form
+      // Clear form on success
       setText("");
       setImagePreview(null);
       if (fileInputRef.current) fileInputRef.current.value = "";
+      toast.dismiss(loadingToast);
+      toast.success("Message sent!");
     } catch (error) {
+      toast.dismiss(loadingToast);
       console.error("Failed to send message:", error);
+      toast.error("Failed to send message. Please try again.");
     }
   };
 
