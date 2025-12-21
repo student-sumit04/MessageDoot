@@ -43,5 +43,9 @@ npm start
 
 https://app.eraser.io/workspace/2bgpzffomEaM7V3Tq33J?origin=share
 
+Authentication workflow:
+https://app.eraser.io/workspace/C7gSAqyO4sin2ij3PAbc?origin=share
+
+
 
 
